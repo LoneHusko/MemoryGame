@@ -44,7 +44,7 @@
         
         <!-- Game -->
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Frame Name="Game"></Frame>
+            <Frame Name="Game" NavigationUIVisibility="Hidden" Navigating="Game_OnNavigating"></Frame>
         </StackPanel>
     </Grid>
 </Window>

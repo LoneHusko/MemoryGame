@@ -42,4 +42,10 @@ public partial class MainWindow : Window {
         var flashStoryboard = FindResource("FlashStoryboard") as Storyboard;
         flashStoryboard?.Begin();
     }
+
+    private void Game_OnNavigating(object sender, NavigatingCancelEventArgs e) {
+        if (e.NavigationMode is NavigationMode.Forward or NavigationMode.Back) {
+            e.Cancel = true;
+        }
+    }
 }
