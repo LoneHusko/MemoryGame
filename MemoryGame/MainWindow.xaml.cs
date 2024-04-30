@@ -28,7 +28,13 @@ public partial class MainWindow : Window {
             FlashLabel();
         }
         else if (Diffuculty.Text == "Easy") {
-            Game.Content = new EasyDif();
+            var game = new EasyDif();
+            Game.Content = game;
+            
+            new Thread(() => {
+                Thread.CurrentThread.IsBackground = true; 
+                game.Game();
+            }).Start();
         }
         else if (Diffuculty.Text == "Moderate") {
             Game.Content = new ModerateDif();
