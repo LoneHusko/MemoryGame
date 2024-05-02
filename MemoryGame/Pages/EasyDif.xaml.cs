@@ -61,10 +61,8 @@ public partial class EasyDif : Page {
             DisableAllButtons();
             foreach (Button button in _buttonList) {
                 button.Opacity = 0;
-                Console.WriteLine(1);
                 await Task.Delay(1000);
                 button.Opacity = 1;
-                Console.WriteLine(1);
                 await Task.Delay(500);
             }
             EnableAllButtons();
@@ -100,7 +98,9 @@ public partial class EasyDif : Page {
                 MessageBox.Show("You won!", "Success", MessageBoxButton.OK,MessageBoxImage.Information);
                 return;
             }
-        } while (_buttonList.Count <= _maxLen);
+        }  while (_buttonList.Count < _maxLen);
+        DisableAllButtons();
+        MessageBox.Show("You won!", "Success", MessageBoxButton.OK,MessageBoxImage.Information);
     }
 
 

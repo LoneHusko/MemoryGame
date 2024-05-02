@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MemoryGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="THE ULTIMATE EPIC MEMORY GAME" Height="450" Width="800"
+        ResizeMode="CanMinimize">
     <Window.Resources>
         <Storyboard x:Key="FlashStoryboard" TargetName="Label">
             <ColorAnimation Storyboard.TargetProperty="(Label.Background).(SolidColorBrush.Color)"
