@@ -91,7 +91,10 @@ public partial class ModerateDif : Page {
                 FlashButtons();
             }
         }  while (_buttonList.Count < _maxLen);
-        DisableAllButtons();
+
+        this.Dispatcher.Invoke(() => {
+            ModerateButtons.Visibility = Visibility.Hidden;
+        });
         MessageBox.Show("You won!", "Success", MessageBoxButton.OK,MessageBoxImage.Information);
     }
 

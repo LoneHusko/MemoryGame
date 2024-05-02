@@ -93,6 +93,10 @@ public partial class EasyDif : Page {
                 FlashButtons();
             }
         }  while (_buttonList.Count < _maxLen);
+
+        this.Dispatcher.Invoke(() => {
+            EasyButtons.Visibility = Visibility.Hidden;
+        });
         MessageBox.Show("You won!", "Success", MessageBoxButton.OK,MessageBoxImage.Information);
     }
 
