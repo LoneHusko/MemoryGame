@@ -9,7 +9,7 @@ namespace MemoryGame.Pages;
 public partial class EasyDif : Page {
     private List<UIElement> _buttons = [];
     private List<Button> _buttonList = [];
-    private readonly int _maxLen = 10;
+    private readonly int _maxLen = 5;
     private int _currentId = 0;
     private readonly Random _random = new Random();
 

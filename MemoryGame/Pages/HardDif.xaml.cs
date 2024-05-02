@@ -7,7 +7,7 @@ namespace MemoryGame.Pages;
 public partial class HardDif : Page {
     private List<UIElement> _buttons = [];
     private List<Button> _buttonList = [];
-    private readonly int _maxLen = 10;
+    private readonly int _maxLen = 15;
     private int _currentId = 0;
     private readonly Random _random = new Random();
 
