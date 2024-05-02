@@ -36,7 +36,7 @@
             </Label>
             
             <!-- Difficulty List -->
-            <ComboBox FontSize="15" Name="Diffuculty">
+            <ComboBox FontSize="15" Name="Difficulty">
                 <ComboBoxItem >Easy</ComboBoxItem>
                 <ComboBoxItem>Moderate</ComboBoxItem>
                 <ComboBoxItem>Hard</ComboBoxItem>

@@ -14,7 +14,7 @@ public partial class MainWindow : Window {
     }
 
     private void StartGame(object sender, RoutedEventArgs e) {
-        switch (Diffuculty.Text) {
+        switch (Difficulty.Text) {
             case "":
                 FlashLabel();
                 break;
