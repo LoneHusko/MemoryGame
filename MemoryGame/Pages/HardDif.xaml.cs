@@ -84,14 +84,13 @@ public partial class HardDif : Page {
             _canPass = false;
             _currentId++;
 
-            if (_currentId == _buttonList.Count && _buttonList.Count != _maxLen) {
+            if (_currentId == _buttonList.Count && _buttonList.Count < _maxLen) {
                 _currentId = 0;
                 _buttonList.Add(GetRandButton());
 
                 FlashButtons();
             }
-
-        } while (_buttonList.Count < _maxLen);
+        }  while (_buttonList.Count < _maxLen);
         DisableAllButtons();
         MessageBox.Show("You won!", "Success", MessageBoxButton.OK,MessageBoxImage.Information);
     }
